@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>ChimBot</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"></script>
+</head>
+<body>
+<div>
+	<h1>ChimBot</h1>
+	<img src="img/chimp.gif" alt="chimp gif" height = "200">
+	<script>const CHAT_SIZE = 4;</script>
+	<div>
+	<p id="chat0"></p>
+	<p id="chat1"></p>
+	<p id="chat2"></p>
+	<p id="chat3"></p>
+	<form onsubmit="talk()">
+		<input type="text" id="message">
+	</form>
+	<button onclick="talk()">Send</button>
+	</div>
+</div>
+</body>
+</html>
