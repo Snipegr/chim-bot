@@ -4,26 +4,31 @@
 <head>
 	<title>ChimBot</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
-	<script src="script.js"></script>
+	<script defer src="script.js"></script>
 </head>
 <body>
-<div>
-	<h1>ChimBot</h1>
-	<img src="img/chimp.gif" alt="chimp gif" height = "200">
-	<script>const CHAT_SIZE = 4;</script>
+<div id = "box">
 	<div>
-	<p id="chat0"></p>
-	<p id="chat1"></p>
-	<p id="chat2"></p>
-	<p id="chat3"></p>
-	<form onsubmit="talk()">
-		<input type="text" id="message">
-	</form>
-	<button onclick="talk()">Send</button>
+		<h1 align="center" style="color: #ffffff;">ChimBot</h1>
+		<img id="chimp-img" src="img/chimp-static.png" alt="chimp gif" >
+	
+		<div id = "chat">
+			<ul type="none" style="padding-left: 0px;" id="chatbox">
+			</ul>
+			<form onsubmit="talk()">
+				<input type="text" id="message">
+			</form>
+			<button onclick="talk()">Send</button>
+			<button onclick='phrase_list = ["Hello", "How are you?"];'>Reset</button><br>
+			<label>Upload/Download a list</label><br>
+			<button onclick="downloadList()">Download</button><br>
+			<input type="file" id="fileInput">
+		</div>
 	</div>
 </div>
 </body>

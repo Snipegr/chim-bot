@@ -1,4 +1,48 @@
-p, h1, h2 {
+body {
+	background-image: url(img/space.jpg);
+	background-color: #342358;
+	background-position: center;
+	background-repeat: no-repeat;
 	font-family: "Noto Sans", serif;
 	font-style: normal;
+}
+#chimp-img {
+	max-width: 100%;
+	height: auto;
+}
+#chat {
+	box-sizing: border-box;
+	padding: 5px;
+	background-color: #ffffff;
+	word-break: break-word;
+	overflow-wrap: break-word;
+	text-wrap: break-word;
+	
+	white-space: normal;
+	hyphens: auto;
+	overflow-x: hidden;
+}
+#box {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+	max-width: 500px;
+	margin: auto;
+}
+@media (min-width: 768px) {
+	#box {
+		width: 60vw;
+	}
+}
+@media (min-width: 1200px) {
+	#box {
+		width: 25vw;
+	}
+}
+#chatbox {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
 }
